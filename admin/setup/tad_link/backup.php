@@ -1,8 +1,8 @@
 <?php
-
-$bak_table[1]['name'] = "tad_link";
-$bak_table[1]['sql']  = "
-CREATE TABLE `" . $xoopsDB->prefix("tad_link_gbak") . "` (
+$bak_table = [];
+$bak_table[1]['name'] = 'tad_link';
+$bak_table[1]['sql'] = '
+CREATE TABLE `' . $xoopsDB->prefix('tad_link_gbak') . "` (
   `link_sn` smallint(5) unsigned NOT NULL auto_increment COMMENT '連結編號',
   `cate_sn` smallint(5) unsigned NOT NULL COMMENT '所屬分類',
   `link_title` varchar(255) NOT NULL COMMENT '網站名稱',
